@@ -51,20 +51,22 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-25 px-40 bg-white">
+    <section className="py-25 px-40 bg-white relative">
       <div className="flex space-x-8">
-        <div>
+        {/* Left Column - Made sticky */}
+        <div className="sticky top-0 h-screen">
           <h2 className="text-[#0D0D0D] text-5xl leading-[60px] tracking-[-0.02em] font-medium md:text-5xl mb-5">
             How Our Service Works
           </h2>
-          <p className="text-[16px] leading-[24px] font-normal text-[#808080]">
+          <p className="text-[16px] leading-[24px] font-normal text-[#808080] max-w-[400px]">
             Each category represents a distinct area of expertise or focus, with
             a variety of services tailored to address specific needs and
             challenges within that domain.
           </p>
         </div>
 
-        <div className="space-y-8 max-w-[544px]">
+        {/* Right Column - Steps */}
+        <div className="space-y-8 max-w-[544px] flex-grow">
           {steps.map((step, index) => (
             <div
               key={index}
