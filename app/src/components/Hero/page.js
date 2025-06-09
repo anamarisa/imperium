@@ -1,6 +1,14 @@
+'use client'; 
+
+import dynamic from "next/dynamic";
 import Image from "next/image";
 
+const HeroSlider = dynamic(() => import("./hero-slider"), {
+  ssr: false,
+});
+
 export default function Hero() {
+
   return (
     <div className="font-jakarta w-full min-h-screen bg-brand-blue">
       <div className="px-40 pt-[50px]">
@@ -35,14 +43,9 @@ export default function Hero() {
         <button className="flex my-[40px] mx-auto rounded-lg bg-white text-dark-blue py-[10px] px-4">
           Get Started NOW. One FLAT FEE →
         </button>
-        <Image
-          src="/logo-features.svg"
-          alt="logo-features"
-          width={718}
-          height={105}
-          className="mx-auto"
-        />
       </div>
+
+      <HeroSlider />
     </div>
   );
 }
