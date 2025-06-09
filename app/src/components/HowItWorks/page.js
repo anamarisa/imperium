@@ -51,39 +51,32 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-25 px-40 bg-white relative">
-      <div className="flex space-x-8">
-        {/* Left Column - Made sticky */}
-        <div className="sticky top-0 h-screen">
-          <h2 className="text-[#0D0D0D] text-5xl leading-[60px] tracking-[-0.02em] font-medium md:text-5xl mb-5">
-            How Our Service Works
-          </h2>
-          <p className="text-[16px] leading-[24px] font-normal text-[#808080] max-w-[400px]">
-            Each category represents a distinct area of expertise or focus, with
-            a variety of services tailored to address specific needs and
-            challenges within that domain.
-          </p>
-        </div>
+    <section className="py-25 px-40 bg-white">
+      <div className="flex flex-col items-center mb-12">
+        <h2 className="text-[#0D0D0D] text-5xl leading-[60px] tracking-[-0.02em] font-medium md:text-5xl mb-5">
+          How Our Service Works
+        </h2>
+        <p className="text-[16px] leading-[24px] font-normal text-[#808080] max-w-[400px]">
+          Each category represents a distinct area of expertise or focus, with a
+          variety of services tailored to address specific needs and challenges
+          within that domain.
+        </p>
+      </div>
 
-        {/* Right Column - Steps */}
-        <div className="space-y-8 max-w-[544px] flex-grow">
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className="p-6 border border-[#D6D6D6] rounded-3xl"
-            >
-              <div className="text-dark-blue text-4xl font-medium leading-[44px] tracking-[-0.02em] mb-2">
-                {step.number}
-              </div>
-              <h3 className="text-2xl leading-[32px] font-medium text-[#0D0D0D] mb-4">
-                {step.title}
-              </h3>
-              <p className="text-[#808080] font-normal text-[16px] leading-[24px]">
-                {step.description}
-              </p>
+      <div className="grid grid-cols-2 gap-6">
+        {steps.map((step, index) => (
+          <div key={index} className="p-6 border border-[#D6D6D6] rounded-3xl">
+            <div className="text-dark-blue text-4xl font-medium leading-[44px] tracking-[-0.02em] mb-2">
+              {step.number}
             </div>
-          ))}
-        </div>
+            <h3 className="text-2xl leading-[32px] font-medium text-[#0D0D0D] mb-4">
+              {step.title}
+            </h3>
+            <p className="text-[#808080] font-normal text-[16px] leading-[24px]">
+              {step.description}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );
