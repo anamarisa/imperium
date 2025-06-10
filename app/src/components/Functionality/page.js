@@ -3,16 +3,14 @@ import Image from "next/image";
 export default function Functionality() {
   return (
     <section className="py-25 px-40 bg-white">
+      <h2 className="text-5xl font-medium leading-[60px] tracking-[-0.02em] mb-[33px] text-[#0D0D0D]">
+        Transforming Your PR Social Media and SEO
+        <br />
+        Vision into Reality with AI Software
+      </h2>
       <div className="w-full grid lg:grid-cols-2 items-center gap-5">
         {/* Left Text Content */}
         <div>
-          <h2 className="text-5xl font-medium leading-[60px] tracking-[-0.02em] mb-[33px] text-[#0D0D0D]">
-            Transforming Your PR
-            <br />
-            Social Media and SEO
-            <br />
-            Vision into Reality with AI Software
-          </h2>
           <p className="text-[#6B6B6B] text-base leading-[24px] mb-[50px] max-w-xl">
             At Imperium AI, we believe turning your public relations and SEO
             goals into success starts with a clear strategy and is about
@@ -23,28 +21,40 @@ export default function Functionality() {
           <ul className="space-y-6">
             {[
               {
-                title: "Simple Campaign Control",
+                title: "Guaranteed Local Coverage",
                 desc: "Our AI solutions alleviate the stress of managing PR and SEO campaigns.",
+                icon: "/functionality/icon1.svg",
               },
               {
                 title: "Comprehensive Brand Support",
                 desc: "We provide press release and content services to boost your brand’s visibility on Google and AI platforms.",
+                icon: "/functionality/icon2.svg",
               },
               {
                 title: "Social Media Automation",
                 desc: "AI-powered posting that saves time and boosts engagement—fully automated, always on-brand. All platforms.",
+                icon: "/functionality/icon3.svg",
               },
               {
                 title: "Guaranteed PR On Top Publications",
                 desc: "Secure your spot in media with guaranteed coverage. We manage content to boost your brand’s authority.",
+                icon: "/functionality/icon4.svg",
               },
               {
                 title: "Blog Automation through AI Copilots",
                 desc: "Let our AI Copilots manage your blog! We automate everything—keeping your content fresh and engaging.",
+                icon: "/functionality/icon5.svg",
               },
             ].map((item, idx) => (
               <li key={idx} className="flex items-start gap-5">
-                <div className="min-w-12 min-h-12 w-12 h-12 rounded-[13px] bg-[#5E17EB] flex items-center justify-center mt-1" />
+                <div className="min-w-12 min-h-12 w-12 h-12 rounded-[13px] bg-[#5E17EB] flex items-center justify-center mt-1">
+                  <Image
+                    src={item.icon}
+                    alt="Feature Icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
                 <div className="w-[60%]">
                   <p className="text-[#0D0D0D] font-medium text-base lg:text-lg leading-tight mb-1">
                     {item.title}

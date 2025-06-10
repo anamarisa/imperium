@@ -36,14 +36,14 @@ const sliderSettings = {
 export default function HeroSlider() {
   return (
     <div className="bg-black py-2 flex items-center">
-      <Slider {...sliderSettings} className="max-w-7xl mx-auto px-4">
+      <Slider {...sliderSettings} className="max-w-7xl mx-auto px-2">
         {images.map((src, index) => (
           <div key={index} className="px-4">
             <Image
               src={src}
               alt={`logo-${index}`}
-              width={200}
-              height={100}
+              width={140}
+              height={40}
               className="mx-auto"
             />
           </div>

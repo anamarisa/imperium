@@ -22,7 +22,7 @@ export default function Category() {
         </>
       ),
       description:
-        "Our guaranteed publication service ensures your story goes live on real news sites. Perfect for founders, creators, and agencies who need results, not pitches. Access 5000+ Publications Worldwide.",
+        "Our guaranteed publication service ensures your story goes live on real news sites every week automatically. Perfect for founders, creators, and agencies who need results, not pitches. Access 5000+ Publications Worldwide. ",
     },
   ];
 
@@ -35,7 +35,10 @@ export default function Category() {
 
         <div className="space-y-12">
           {categories.map((category, index) => (
-            <div key={index} className="flex justify-between items-center gap-8">
+            <div
+              key={index}
+              className="flex justify-between items-center gap-8"
+            >
               <h3 className="min-w-[280px] text-2xl font-medium leading-[32px] text-[#0D0D0D]">
                 {category.title}
               </h3>
