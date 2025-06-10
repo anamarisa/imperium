@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSlider = dynamic(() => import("./hero-slider"), {
   ssr: false,
@@ -44,9 +45,11 @@ export default function Hero() {
       </div>
 
       <div className="pb-[50px]">
-        <button className="flex my-[40px] mx-auto rounded-lg bg-white text-dark-blue py-[10px] px-4">
-          Get Started NOW. One FLAT FEE →
-        </button>
+        <Link href="https://imperiumai.ai/getstarted" passHref>
+          <button className="flex cursor-pointer my-[40px] mx-auto rounded-lg bg-white text-dark-blue py-[10px] px-4">
+            Get Started NOW. One FLAT FEE →
+          </button>
+        </Link>
       </div>
 
       <HeroSlider />

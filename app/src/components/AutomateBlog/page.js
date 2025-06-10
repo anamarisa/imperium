@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AutomateBlog() {
   return (
@@ -37,9 +38,11 @@ export default function AutomateBlog() {
             easiest way to grow your brand visibility at scale.
           </p>
 
-          <button className="bg-[#536EFF] text-[#FCFCFC] text-[14px] leading-[20px] py-[10px] px-[14px] font-medium rounded-lg transition-colors">
-            Get Started
-          </button>
+          <Link href="https://imperiumai.ai/getstarted" passHref>
+            <button className="bg-[#536EFF] cursor-pointer text-[#FCFCFC] text-[14px] leading-[20px] py-[10px] px-[14px] font-medium rounded-lg transition-colors">
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
     </section>

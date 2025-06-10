@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AISocialMedia() {
   const icons = [
@@ -37,9 +38,11 @@ export default function AISocialMedia() {
           </p>
 
           <div className="flex items-center space-x-6">
-            <button className="bg-[#536EFF] text-[#FCFCFC] text-[14px] leading-[20px] py-[10px] px-[14px] font-medium rounded-lg transition-colors">
-              Get Started
-            </button>
+            <Link href="https://imperiumai.ai/getstarted" passHref>
+              <button className="bg-[#536EFF] cursor-pointer text-[#FCFCFC] text-[14px] leading-[20px] py-[10px] px-[14px] font-medium rounded-lg transition-colors">
+                Get Started
+              </button>
+            </Link>
 
             <div className="flex items-center space-x-2">
               {icons.map((icon, index) => (
