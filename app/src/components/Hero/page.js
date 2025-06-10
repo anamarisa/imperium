@@ -1,4 +1,4 @@
-'use client'; 
+"use client";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -8,7 +8,6 @@ const HeroSlider = dynamic(() => import("./hero-slider"), {
 });
 
 export default function Hero() {
-
   return (
     <div className="font-jakarta w-full min-h-screen bg-brand-blue">
       <div className="px-40 pt-[50px]">
@@ -16,7 +15,7 @@ export default function Hero() {
           AI Copilots Built to Manage <br /> your Entire Digital Ecosystem
         </h1>
         <p className="my-[25px] font-600 text-center text-white text-[28px] leading-[48px] tracking-[-0.02em] ">
-          Start with a $1 Free 30-day trial <br />
+          Start with a $1 setup fee and a Free 30-day trial <br />
           Continue for just $750 monthly for maximum IMPACT.
         </p>
         <Image
@@ -33,7 +32,12 @@ export default function Hero() {
           automation.
         </p>
         <div className="flex justify-center space-x-[47px] items-center mt-6">
-          <Image src="/imperium.svg" alt="imperium" width={226.88} height={45.38} />
+          <Image
+            src="/imperium.svg"
+            alt="imperium"
+            width={226.88}
+            height={45.38}
+          />
           <Image src="/shutter.svg" alt="imperium" width={226.53} height={66} />
           <Image src="/cfuze.svg" alt="imperium" width={330} height={20.63} />
         </div>
