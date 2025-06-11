@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "Imperium",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.png",
   },
 };
 

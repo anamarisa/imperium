@@ -12,13 +12,83 @@ export default function Questions() {
       description:
         "Our approach to PR integrates artificial intelligence with a leading CRM platform to pitch hundreds of thousands of journalists at top outlets, all in real time. We write all the content from scratch and get your approval prior to publication. In aggregate, our clients get millions of impressions each month and are based in over 90 countries representing countless industries. From Fortune 500s to startups, we’ve helped countless companies launch new products, elevate their brand, and reimagine entire industries through powerful PR and communications strategies. That being said – all of our placements are guaranteed. We only offer publications that we get with 100% certainty get you placed on. We don’t work with publications we can’t guarantee.",
     },
-    { title: "Why should I purchase your software?", description: "" },
-    { title: "Which publications do you recommend I buy?", description: "" },
-    { title: "What does your software do?", description: "" },
-    { title: "How long does it take to see results?", description: "" },
-    { title: "What kind of businesses os this good for?", description: "" },
-    { title: "Is this good for individuals?", description: "" },
-    { title: "What does AI Copilot mean?", description: "" },
+    {
+      title: "Why should I purchase your software?",
+      description:
+        "Our platform is built to help businesses and creators grow faster, operate smarter, and automate what slows them down. By combining AI-powered tools with vertical-specific features, we give you a competitive edge without the typical complexity or overhead.",
+    },
+    {
+      title: "Which publications do you recommend I buy?",
+      description:
+        "Our platform is built to help businesses and creators grow faster, operate smarter, and automate what slows them down. By combining AI-powered tools with vertical-specific features, we give you a competitive edge without the typical complexity or overhead.",
+    },
+    {
+      title: "What does your software do?",
+      description: (
+        <>
+          It’s an AI-driven platform with tools for content creation,
+          distribution, automation, and insight. Across products like Imperium,
+          SmartShutter, and ContentFuze, users can:
+          <ul className="list-disc list-inside my-3 ml-1 space-y-1">
+            <li>Create and auto-post content</li>
+            <li>Track engagement</li>
+            <li>Collaborate across teams</li>
+            <li>Launch vertical-specific campaigns</li>
+          </ul>
+          All while saving time and scaling faster.
+        </>
+      ),
+    },
+    {
+      title: "How long does it take to see results?",
+      description:
+        "Most users see noticeable improvements within 2–4 weeks, especially in content consistency, engagement metrics, and operational efficiency. Full ROI depends on your vertical and adoption pace—but results typically compound quickly.",
+    },
+    {
+      title: "What kind of businesses is this good for?",
+      description: (
+        <>
+          We’ve built tailored experiences for:
+          <ul className="list-disc list-inside my-3 ml-1 space-y-1">
+            <li>Real Estate</li>
+            <li>Crypto projects</li>
+            <li>Public & Private Companies</li>
+            <li>Event Management</li>
+            <li>eCommerce & Online Businesses</li>
+            <li>Modeling agencies</li>
+            <li>Local Governments</li>
+            <li>Clean Energy & more</li>
+          </ul>
+          <p>
+            If your business creates content, manages a brand, or needs
+            automation—this is built for you.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: "Is this good for individuals?",
+      description:
+        "Yes—solo creators, models, athletes, and independent professionals use our tools to manage their brand, create content, and automate their outreach—without needing a large team or agency.",
+    },
+    {
+      title: "What does AI Copilot mean?",
+      description: (
+        <>
+          Our AI Copilot acts like a smart assistant inside the platform. It
+          helps you:
+          <ul className="list-disc list-inside my-3 ml-1 space-y-1">
+            <li>Draft posts, emails, or campaign briefs</li>
+            <li>Suggest improvements based on real-time performance</li>
+            <li>Surface insights without digging through dashboards</li>
+            <li>Automate repetitive tasks</li>
+            <li>
+              It’s like having a strategist and content creator rolled into one.
+            </li>
+          </ul>
+        </>
+      ),
+    },
   ];
 
   const toggleOpen = (index) => {
