@@ -27,7 +27,8 @@ const sliderSettings = {
   arrows: false,
   pauseOnHover: false,
   responsive: [
-    { breakpoint: 1024, settings: { slidesToShow: 4 } },
+    { breakpoint: 1280, settings: { slidesToShow: 4 } },
+    { breakpoint: 1024, settings: { slidesToShow: 3 } },
     { breakpoint: 768, settings: { slidesToShow: 2 } },
     { breakpoint: 480, settings: { slidesToShow: 1 } },
   ],
@@ -35,20 +36,24 @@ const sliderSettings = {
 
 export default function HeroSlider() {
   return (
-    <div className="bg-black py-2 flex items-center">
-      <Slider {...sliderSettings} className="max-w-7xl mx-auto px-2">
-        {images.map((src, index) => (
-          <div key={index} className="px-4">
-            <Image
-              src={src}
-              alt={`logo-${index}`}
-              width={140}
-              height={40}
-              className="mx-auto"
-            />
-          </div>
-        ))}
-      </Slider>
+    <div className="bg-black py-2 w-full overflow-hidden">
+      <div className="w-full">
+        <Slider {...sliderSettings} className="w-full">
+          {images.map((src, index) => (
+            <div key={index} className="px-1 sm:px-2">
+              <div className="flex items-center justify-center">
+                <Image
+                  src={src}
+                  alt={`logo-${index}`}
+                  width={140}
+                  height={40}
+                  className="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] h-auto object-contain"
+                />
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

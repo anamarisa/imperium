@@ -15,21 +15,31 @@ import Functionality from "./src/components/Functionality/page";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
       <Functionality />
       <Features />
+      {/* Done */}
       <Category />
+      {/* Done */}
       <HowItWorks />
+      {/* Done */}
       <AITools />
+      {/* Done */}
       <AIPRCopilot />
+      {/* Done */}
       <AISocialMedia />
+      {/* Done */}
       <AutomateBlog />
+      {/* Done */}
       <Testimonials />
+      {/* Done */}
       <Featured />
+      {/* Done */}
       <Questions />
+      {/* Done */}
       <Footer />
-    </>
+    </div>
   );
 }

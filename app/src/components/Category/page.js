@@ -18,31 +18,30 @@ export default function Category() {
     {
       title: (
         <>
-          Guaranteed <br /> Publications
+          Guaranteed <br className="hidden sm:block" /> Publications
         </>
       ),
       description:
-        "Our guaranteed publication service ensures your story goes live on real news sites every week automatically. Perfect for founders, creators, and agencies who need results, not pitches. Access 5000+ Publications Worldwide. ",
+        "Get featured in top-tier publications like USA Today, Forbes, INSIDER, New York Telegraph, AP, Woman's Week, and more. Our AI Copilots handle everything—so you can focus on your life.",
     },
   ];
 
   return (
     <section className="bg-white">
-      <div className="py-25 px-40">
-        <h1 className="font-medium text-5xl leading-[60px] tracking-[-0.02em] mb-12">
+      <div className="py-8 sm:py-16 lg:py-25 px-4 sm:px-6 lg:px-40 max-w-[1440px] mx-auto">
+        <h1 className="font-medium text-2xl sm:text-3xl lg:text-5xl leading-tight sm:leading-[60px] tracking-[-0.02em] mb-6 sm:mb-8 lg:mb-12">
           10X Conversions. Become known everywhere.
         </h1>
 
-        <div className="space-y-12">
+        <div className="space-y-6 sm:space-y-8 lg:space-y-12">
           {categories.map((category, index) => (
             <div
               key={index}
-              className="flex justify-between items-center gap-8"
-            >
-              <h3 className="min-w-[280px] text-2xl font-medium leading-[32px] text-[#0D0D0D]">
+              className="flex flex-col sm:flex-row justify-between items-start gap-4 sm:gap-8 lg:gap-12 p-4 sm:p-6 lg:p-8 rounded-lg hover:bg-gray-50 transition-colors">
+              <h3 className="w-full sm:w-[280px] lg:w-[320px] text-lg sm:text-xl lg:text-2xl font-medium leading-tight sm:leading-[32px] text-[#0D0D0D] shrink-0">
                 {category.title}
               </h3>
-              <p className="font-normal text-[16px] leading-[24px] text-[#808080] flex-1">
+              <p className="font-normal text-sm sm:text-base lg:text-lg leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#808080] flex-1 max-w-[800px]">
                 {category.description}
               </p>
             </div>
