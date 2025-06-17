@@ -12,6 +12,7 @@ import Questions from "./src/components/Questions/page";
 import Footer from "./src/components/Footer/page";
 import Testimonials from "./src/components/Testimonials/page";
 import Functionality from "./src/components/Functionality/page";
+import Link from "next/link";
 
 export default function Home() {
   return (
