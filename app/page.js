@@ -20,27 +20,43 @@ export default function Home() {
       <Hero />
       <Functionality />
       <div className="flex justify-center items-center mt-12 sm:hidden">
-        <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
-          Get Started
-        </button>
+        <Link
+          href="https://imperiumai.ai/getstarted"
+          passHref>
+          <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
+            Get Started
+          </button>
+        </Link>
       </div>
       <Features />
       <div className="flex justify-center items-center mt-4 sm:hidden">
-        <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
-          Get Started
-        </button>
+        <Link
+          href="https://imperiumai.ai/getstarted"
+          passHref>
+          <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
+            Get Started
+          </button>
+        </Link>
       </div>
       <Category />
       <div className="flex justify-center items-center mt-4 sm:hidden">
-        <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
-          Get Started
-        </button>
+        <Link
+          href="https://imperiumai.ai/getstarted"
+          passHref>
+          <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
+            Get Started
+          </button>
+        </Link>
       </div>
       <HowItWorks />
       <div className="flex justify-center items-center mt-4 sm:hidden">
-        <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
-          Get Started
-        </button>
+        <Link
+          href="https://imperiumai.ai/getstarted"
+          passHref>
+          <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
+            Get Started
+          </button>
+        </Link>
       </div>
       <AITools />
       <AIPRCopilot />
