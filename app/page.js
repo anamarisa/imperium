@@ -19,26 +19,36 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Functionality />
+      <div className="flex justify-center items-center mt-12 sm:hidden">
+        <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
+          Get Started
+        </button>
+      </div>
       <Features />
-      {/* Done */}
+      <div className="flex justify-center items-center mt-4 sm:hidden">
+        <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
+          Get Started
+        </button>
+      </div>
       <Category />
-      {/* Done */}
+      <div className="flex justify-center items-center mt-4 sm:hidden">
+        <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
+          Get Started
+        </button>
+      </div>
       <HowItWorks />
-      {/* Done */}
+      <div className="flex justify-center items-center mt-4 sm:hidden">
+        <button className="rounded-xl cursor-pointer py-2 px-3 bg-dark-blue text-broken-white hover:bg-opacity-90 transition-colors text-sm sm:text-base">
+          Get Started
+        </button>
+      </div>
       <AITools />
-      {/* Done */}
       <AIPRCopilot />
-      {/* Done */}
       <AISocialMedia />
-      {/* Done */}
       <AutomateBlog />
-      {/* Done */}
       <Testimonials />
-      {/* Done */}
       <Featured />
-      {/* Done */}
       <Questions />
-      {/* Done */}
       <Footer />
     </div>
   );
